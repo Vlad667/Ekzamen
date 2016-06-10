@@ -4,17 +4,25 @@
 
 int main(int argc, char *argv[]) { 
 int mas[300]; 
-int i; 
+int i, kilkist = 0; 
 srand (time(0)); 
+
 if(n > 200){ 
-printf("Pomylka, vvedeno 4islo bilshe 50 ") 
-} 
+printf("Pomylka, vvedeno 4islo bilshe ") 
+} else { 
 for(i=0;i < 100;i++){ 
 mas [i] = (rand () % 200)-100; 
 printf ("\nmas[%d]=%d",i,mas[i]); 
-
-
 } 
-system("pause"); 
+
+for(i=0;i < 100;i++){ 
+if(mas[i] > 50){ 
+kilkist = kilist + 1; 
+} 
+} 
+} 
+
+printf("Kilkist elementiv bolshe 50: %d", kilkist); 
+
 return 0; 
-} 
+}
