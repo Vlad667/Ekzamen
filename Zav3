@@ -1,1 +1,23 @@
+#include <stdio.h> 
 
+float gipot(float a, float b){ 
+float G; 
+G = sqrt(pow(a, 2) + pow(b, 2)); 
+
+return G; 
+} 
+
+int main(){ 
+
+float a, b; 
+
+printf("Enter katet A: "); 
+scanf("%f", &a); 
+
+printf("Enter katet B: "); 
+scanf("%f", &b); 
+
+printf("Gipotenyza: %.2f", gipot(a, b)); 
+system("pause");
+return 0; 
+}
