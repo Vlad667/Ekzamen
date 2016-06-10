@@ -1,0 +1,20 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <time.h> 
+
+int main(int argc, char *argv[]) { 
+int mas[300]; 
+int i; 
+srand (time(0)); 
+if(n > 200){ 
+printf("Pomylka, vvedeno 4islo bilshe 50 ") 
+} 
+for(i=0;i < 100;i++){ 
+mas [i] = (rand () % 200)-100; 
+printf ("\nmas[%d]=%d",i,mas[i]); 
+
+
+} 
+system("pause"); 
+return 0; 
+} 
